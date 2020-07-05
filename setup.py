@@ -3,7 +3,7 @@ with open("README.MD","r") as fh:
     long = fh.read()
 setup(
     name = 'shopi-py',
-    version='1.0.1',
+    version='1.0.2',
     description='An unnofical python package to interact with shopify stores',
     long_description=long,
     long_description_content_type="text/markdown",

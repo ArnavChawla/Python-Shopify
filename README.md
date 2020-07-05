@@ -1,6 +1,6 @@
 # Welcome to Shopi(Py)
 
-Shopi(Py) was created to make it easy for people to interact with the frontend of Shopify Stores in Python. Whereas the current Shopify API allows store owners to interact with their stores backend, Shopi(Py) allows anybody to easily get information about stores and they're products
+Shopi(Py) was created to make it easy for people to interact with the frontend of Shopify Stores in Python. Whereas the current Shopify API allows store owners to interact with their stores backend, Shopi(Py) allows anybody to easily get information about stores and their products
 
 # Installation
 The installation process for Shopi(Py) easy! Just enter the following command in your terminal:
@@ -25,7 +25,7 @@ Currently, the package is in early development and contains a few main methods. 
 
 	>>>print(shopify.getSizeVariant("6"))
 	19437737148544
-	
+
 	>>>print(shopify.getCheckoutUrl())
 	https://kith.com/checkout/19437737148544:1
 
