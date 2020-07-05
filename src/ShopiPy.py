@@ -13,11 +13,12 @@ class size():
 
 def isShopify(url):
     #Checks if a store is hosted on the shopify platforn 
+    tempurl = ""
     if url[-1] == '/':
-        url = url + 'admin'
+        tempurl = url + 'admin'
     else:
-        url = url + '/admin'
-    r = scraper.get(url, allow_redirects=True)
+        tempurl = url + '/admin'
+    r = scraper.get(tempurl, allow_redirects=True)
     if 'shopify' in r.url:
         global furl
         furl = url
@@ -58,11 +59,11 @@ def findProductUrl(keywords, url=None):
     if url == None:
         global furl
         url = furl
-    product = getProduct(url, keywords)
+    product = getProduct(keywords,url)
     if product != None:
         if url[-1] == '/':
-            return url + '{}'.format(product['handle'])
-        return url + '/{}'.format(product['handle'])
+            return url + 'products/{}'.format(product['handle'])
+        return url + '/products/{}'.format(product['handle'])
     return 'Product Not Found'
 
 def findVariant(product, size):
@@ -114,3 +115,7 @@ def getCheckoutUrl(variant=None,url=None,keywords=None,size=None):
             else:
                 return scraper.get("{}/cart{}:1".format(url, variant), allow_redirects=True).url
     
+url = "https://kith.com"
+print(isShopify(url))
+
+print(findProductUrl(["Howie", "Short", "Blue"]))

@@ -9,7 +9,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Arnav Chawla",
     author_email="arnavchawla23@gmail.com",
-    # url = "https://github.com/ArnavChawla/RequestSoup",
+    url = "https://github.com/ArnavChawla/Python-Shopify",
     py_modules=["ShopiPy"],
     package_dir={'':'src'},
     install_requires = [
