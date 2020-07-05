@@ -9,17 +9,23 @@ The installation process for Shopi(Py) easy! Just enter the following command in
 
 # Usage
 Currently, the package is in early development and contains a few main methods. An example of usage is shown here:
+	
 	>>>import ShopiPy as shopify
 
 	>>>url = "https://kith.com"
+
 	>>>print(shopify.isShopify(url))
 	True
+
 	>>>print(shopify.findProductUrl(["Howie", "Short", "Blue"]))
 	https://kith.com/products/khk6041-109
+
 	>>>print(shopify.getSizeVariant("random"))
 	19437737050240
+
 	>>>print(shopify.getSizeVariant("6"))
 	19437737148544
+	
 	>>>print(shopify.getCheckoutUrl())
 	https://kith.com/checkout/19437737148544:1
 
