@@ -10,7 +10,7 @@ setup(
     author="Arnav Chawla",
     author_email="arnavchawla23@gmail.com",
     # url = "https://github.com/ArnavChawla/RequestSoup",
-    py_modules=["ShopiPy"],
+    py_modules=["shopipy"],
     package_dir={'':'src'},
     install_requires = [
         "RequestSoup"
