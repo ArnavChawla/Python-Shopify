@@ -1,5 +1,8 @@
 # Welcome to Shopi(Py)
 
+[![Downloads](https://pepy.tech/badge/shopi-py)](https://pepy.tech/project/shopi-py)
+
+
 Shopi(Py) was created to make it easy for people to interact with the frontend of Shopify Stores in Python. Whereas the current Shopify API allows store owners to interact with their stores backend, Shopi(Py) allows anybody to easily get information about stores and their products
 
 # Installation
